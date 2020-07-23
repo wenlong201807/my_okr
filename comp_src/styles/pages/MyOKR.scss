@@ -1,0 +1,236 @@
+.MyOKRWrap {
+  background-color: rgba(245, 247, 249, 1);
+  box-sizing: border-box;
+  height: calc(100vh);
+
+  // 季度KR详情内容部分
+  .detailContentWrap {
+    display: block;
+    box-sizing: border-box;
+    // padding-bottom: 0px;
+    margin: 0px 20px 15px 20px;
+  }
+
+  .detailContentWrapHide {
+    display: none;
+    // box-sizing: border-box;
+    // padding-bottom: 0px;
+  }
+
+  .bigHeadWrap {
+    // background: pink;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #fff;
+    margin-bottom: 3px;
+    padding-bottom: 5px;
+
+    .bigOTitle {
+      box-sizing: border-box;
+      display: flex;
+      justify-content: space-around;
+      height: 45px;
+      line-height: 45px;
+      font-family: '微软雅黑';
+      font-weight: 400;
+      font-style: normal;
+      font-size: 15px;
+      color: #000000;
+
+      .headTwo {
+        box-sizing: border-box;
+        width: calc(70% - 0px);
+
+        .flag {
+          display: inline-block;
+          width: 30px;
+          margin-left: 10px;
+        }
+
+        .oNum {
+          display: inline-block;
+          width: 35px;
+        }
+      }
+
+      .reasonWeight {
+        width: 10%;
+      }
+
+      .reasonFinish {
+        width: 10%;
+      }
+
+      .action {
+        box-sizing: border-box;
+        width: calc(10% - 0px);
+        margin-right: 0px;
+        display: flex;
+        justify-content: flex-end;
+        cursor: pointer;
+        text-align: center;
+
+        .headTwoRight {
+          flex: 1;
+        }
+
+        .headTwoRightArrow {
+          flex: 1;
+        }
+      }
+    }
+
+    .bigOContent {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      padding-left: 75px;
+      font-family: '微软雅黑';
+      font-weight: 400;
+      font-style: normal;
+      font-size: 10px;
+      color: #aaaaaa;
+    }
+  }
+
+
+
+  .reasonContentShow {
+    display: block;
+    margin-bottom: 5px;
+    background: rgba(255, 255, 255, 1);
+  }
+
+  .reasonContentHide {
+    display: none;
+  }
+
+  .KRContentWrap {
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+
+    .KR {
+      box-sizing: border-box;
+      margin-left: 75px;
+      padding: 10px 0px;
+      width: calc(70% - 75px);
+      border-bottom: 1px solid #ccc;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      font-family: '微软雅黑';
+      font-weight: 400;
+      font-style: normal;
+      font-size: 14px;
+      color: #333333;
+      cursor: pointer;
+
+      &:hover {
+        color: #F59A23;
+      }
+
+      .innerTitle {
+        display: inline-block;
+        width: 40px;
+      }
+
+      .connectTeam {
+        padding-left: 40px;
+        font-style: normal;
+        font-size: 10px;
+        color: #aaaaaa;
+      }
+    }
+
+    .small_15 {
+      box-sizing: border-box;
+      width: 10%;
+      padding: 10px 0px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .none_word {
+      box-sizing: border-box;
+      width: 10%;
+      padding: 10px 0px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      color: #2D8CF0;
+      cursor: pointer;
+
+      &:hover {
+        color: #F59A23;
+      }
+    }
+  }
+
+  .addKRBtn {
+    box-sizing: border-box;
+    padding: 15px 20px 0px 75px;
+    cursor: pointer;
+    font-family: '微软雅黑';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    color: #aaaaaa;
+
+    &:hover {
+      color: rgba(45, 140, 240, 1);
+    }
+  }
+
+  .descTitle {
+    padding: 15px 20px 0px 75px;
+  }
+
+  .processInput {
+    padding: 15px 20px 0px 75px;
+    height: 80px;
+  }
+
+  // 添加obj按钮
+  .addObjBtnWrap {
+    display: flex;
+    justify-content: flex-start;
+    height: 35px;
+    line-height: 35px;
+    margin: 0px 20px 20px 20px;
+    padding-left: 40px;
+    font-family: '微软雅黑';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    color: #AAAAAA;
+    cursor: pointer;
+    background: #fff;
+
+    &:hover {
+      color: #2D8CF0;
+    }
+
+    .addIcon {
+      display: inline-block;
+      width: 35px;
+    }
+
+    .addType {
+      display: inline-block;
+      width: 105px;
+      // background: yellowgreen;
+    }
+
+    .addWeight {
+      display: inline-block;
+      width: 205px;
+      color: red;
+      // background: yellow;
+    }
+  }
+}

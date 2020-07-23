@@ -1,0 +1,78 @@
+@import './CommonVar.scss';
+
+//文字一行超出显示省略号
+@mixin ellipsis () {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin clearFix() {
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+
+// 固定标题
+@mixin fixedTitleFonts ($bc:$ThemeBC) {
+  font-family: '微软雅黑';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  color: #ffffff;
+  text-align: left;
+  padding-left: 20px;
+  background-color: $bc;
+}
+
+// @import '../CommonMixin.scss';
+// @include fixedTitleFonts;
+
+
+/*一般mixin*/
+
+@mixin helloMixin {
+  display: inline-block;
+  padding: 20px;
+
+  font: {
+    size: 20px;
+    weight: 500;
+  }
+
+  color: red;
+}
+
+/*嵌套mixin*/
+
+@mixin helloMixin2 {
+  padding: 10px;
+
+  @include helloMixin;
+
+  background-color: red;
+}
+
+/*参数mixin*/
+
+@mixin sexy-border($color, $width) {
+  border: {
+    color: $color;
+    width: $width;
+    style: dashed;
+  }
+
+  ;
+}
+
+.div {
+  width: 100px;
+  @include helloMixin2;
+}
+
+.div {
+  @include sexy-border(blue, 2px);
+}

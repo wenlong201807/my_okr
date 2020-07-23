@@ -1,0 +1,470 @@
+.PersonReasonKRDetailWrap {
+  background-color: rgba(245, 247, 249, 1);
+  box-sizing: border-box;
+  height: calc(100vh);
+
+
+  .topNav {
+    display: flex;
+    justify-content: space-between;
+    height: 45px;
+    line-height: 45px;
+    padding: 0px 10px;
+    border-bottom: 1px solid #ccc;
+
+    .title {
+      margin-left: 20px;
+      font-family: '微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';
+      font-weight: 700;
+      font-style: normal;
+      font-size: 16px;
+    }
+  }
+
+  .yearRelative {
+    // height: 140px;
+    margin: 10px 20px 3px 45px;
+
+    .title {
+      padding-top: 8px;
+      // margin: 0px 0px 0px 0px;
+      display: flex;
+      justify-content: space-around;
+      font-family: '微软雅黑';
+      font-weight: 400;
+      font-style: normal;
+      font-size: 15px;
+      color: #000000;
+      // background: yellowgreen;
+      background-color: rgba(255, 255, 255, 1);
+      // .finishTop {
+      //   // background: red;
+      // }
+    }
+
+    .content {
+      // height: 70px;
+      // line-height: 70px;
+      display: flex;
+      justify-content: space-around;
+      // margin: 0px 0px 0px 0px;
+      // background: pink;
+      background-color: rgba(255, 255, 255, 1);
+      border-bottom: 1px solid #ccc;
+    }
+
+    .subtitle_55 {
+      width: 70%;
+      // background: green;
+    }
+
+    .yearKRTop {
+      width: 10%;
+      // background: pink;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .finishTop {
+      width: 10%;
+      // background: pink;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .adminTop {
+      width: 10%;
+      // background: pink;
+      text-align: center;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .small_ad_15 {
+      font-family: '微软雅黑';
+      font-weight: 400;
+      font-style: normal;
+      font-size: 15px;
+      color: #000000;
+    }
+
+    .mr_third {
+      padding-left: 50px;
+      padding-bottom: 5px;
+      // background: pink;
+    }
+
+    .subtitle_third {
+      display: inline-block;
+      width: 30px;
+      margin-left: 10px;
+      // background: burlywood;
+    }
+
+    .subtitle_third_O {
+      display: inline-block;
+      width: 40px;
+      // margin-left: 40px;
+      // background: yellowgreen;
+    }
+
+    .small_fas_15 {
+      padding-left: 30px;
+      font-style: normal;
+      font-size: 10px;
+      color: #aaaaaa;
+      line-height: 20px;
+      // background: red;
+
+      &:first-child {
+        margin-top: 10px;
+      }
+    }
+
+    .small_finish_15 {
+      box-sizing: border-box;
+      // padding-right: 30px;
+      // background: yellowgreen;
+    }
+  }
+
+  // 每一个KR
+  .reasonKRExameDetailClaWrap {
+    animation: all 5s linear 2s;
+    display: block;
+    background-color: rgba(255, 255, 255, 1);
+    padding-bottom: 15px;
+
+    .title {
+      padding-top: 20px;
+      display: flex;
+      justify-content: space-around;
+      font-family: '微软雅黑';
+      font-weight: 400;
+      font-style: normal;
+      font-size: 15px;
+      color: #000000;
+
+      .subtitle_55 {
+        width: 70%;
+        // background: green;
+        cursor: pointer;
+
+        &:hover {
+          color: #F59A23;
+        }
+      }
+    }
+
+    .contentKR {
+      display: flex;
+      justify-content: space-around;
+
+      .subtitle_55 {
+        width: 70%;
+      }
+    }
+
+    .yearKRTop {
+      width: 10%;
+      // background: pink;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .finishTop {
+      width: 10%;
+      // background: pink;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .adminTop {
+      width: 10%;
+      // background: pink;
+      text-align: center;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .small_ad_15 {
+      font-family: '微软雅黑';
+      font-weight: 400;
+      font-style: normal;
+      font-size: 15px;
+      color: #000000;
+    }
+
+    .mr_third {
+      padding-left: 50px;
+      padding-bottom: 6px;
+      // background: pink;
+    }
+
+    .subtitle_third {
+      display: inline-block;
+      width: 30px;
+      margin-left: 10px;
+      // background: burlywood;
+    }
+
+    .subtitle_third_O {
+      display: inline-block;
+      width: 40px;
+      // margin-left: 40px;
+      // background: yellowgreen;
+    }
+
+    .small_fas_15 {
+      padding-left: 30px;
+      font-style: normal;
+      font-size: 10px;
+      color: #aaaaaa;
+      line-height: 20px;
+      // background: red;
+
+      &:first-child {
+        margin-top: 10px;
+      }
+    }
+
+    .small_finish_15 {
+      box-sizing: border-box;
+      // padding-right: 30px;
+      // background: yellowgreen;
+    }
+
+    // 每个KR的季度详情包
+    .eachReasonKRWrap {
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      margin: 0px 18px 0px 38px;
+      padding: 2px 1px 10px 5px;
+      // background-color: yellow;
+
+      // 季度标题
+      .reasonTitle {
+        box-sizing: border-box;
+        margin: 0px 0px 0px 0px;
+        // background: yellowgreen;
+        background: rgba(255, 255, 255, 1);
+        display: flex;
+        justify-content: space-around;
+        // background: pink;
+        // padding: 0px 33px;
+        height: 45px;
+        line-height: 45px;
+        font-family: '微软雅黑';
+        font-weight: 400;
+        font-style: normal;
+        font-size: 15px;
+        color: #000000;
+        // border-bottom: 1px solid #ccc;
+
+        .headTwo {
+          box-sizing: border-box;
+          // margin-left: 20px;
+          // width: calc(70% - 20px);
+          width: 70%;
+          border-bottom: 1px solid #ccc;
+          // background: pink;
+
+          // background: yellowgreen;
+          .blueDot {
+            display: inline-block;
+            border-radius: 50%;
+            width: 10px;
+            height: 10px;
+            margin-right: 22px;
+            // background: inherit;
+            background-color: rgba(45, 140, 240, 1);
+          }
+
+          .headThreee {
+            display: inline-block;
+            width: 120px;
+            // height: 10px;
+            // background: yellow;
+          }
+
+          .arrow {
+            display: inline-block;
+            width: 60px;
+            cursor: pointer;
+            text-align: center;
+            // height: 10px;
+            // background: red;
+          }
+        }
+
+        .reasonWeight {
+          width: 10%;
+          border-bottom: 1px solid #ccc;
+        }
+
+        .reasonFinish {
+          width: 10%;
+          border-bottom: 1px solid #ccc;
+        }
+
+        .action {
+          box-sizing: border-box;
+          width: calc(10% - 40px);
+          margin-right: 40px;
+
+          display: flex;
+          justify-content: flex-end;
+          // background: red;
+          // cursor: pointer;
+          // border-bottom: 1px solid #ccc;
+
+          .headTwoRight {
+            // margin-left: 30px;
+            // background: pink;
+            text-align: left;
+            padding-right: 20px;
+            padding-left: 20px;
+            cursor: pointer;
+          }
+        }
+      }
+
+      // 每一个季度的KR  ***可展开收起的部分
+      // **通过添加，删除样式控制 className={{'reasonContentShow':true reasonContentHide:false}}*
+      .reasonContentShow {
+        display: block;
+        // margin: 0px 0px 0px;
+        margin-bottom: 5px;
+        // background: red;
+        background: rgba(255, 255, 255, 1);
+        // background: pink;
+      }
+
+      .reasonContentHide {
+        display: none;
+      }
+
+      .KRContentWrap {
+        display: flex;
+        justify-content: space-around;
+        // background: burlywood;
+        // padding: 10px 0px;
+        box-sizing: border-box;
+
+        // border-bottom: 1px solid #ccc;
+        .KR {
+          box-sizing: border-box;
+          // width: 70%;
+          padding: 10px 0px;
+          margin-left: 33px;
+          width: calc(70% - 33px);
+          border-bottom: 1px solid #ccc;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          // background: pink;
+          font-family: '微软雅黑';
+          font-weight: 400;
+          font-style: normal;
+          font-size: 14px;
+          color: #555555;
+
+          .innerTitle {
+            display: inline-block;
+            width: 40px;
+            // background: pink;
+          }
+
+          .connectTeam {
+            padding-left: 40px;
+            // background: yellowgreen;
+            font-style: normal;
+            font-size: 10px;
+            color: #aaaaaa;
+          }
+        }
+
+        .small_15 {
+          box-sizing: border-box;
+          width: 10%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          border-bottom: 1px solid #ccc;
+          // background: yellowgreen;
+        }
+
+        .none_word {
+          box-sizing: border-box;
+          width: calc(10% - 20px);
+          margin-left: 20px;
+          // margin: 0px 5px;
+          // background: red;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          // border-bottom: 1px solid #ccc;
+          .posiRankWrap {
+            position: relative;
+
+            .posiRank {
+              position: absolute;
+            }
+
+            .posiRankDetail {
+              position: absolute;
+              text-align: center;
+              margin-left: 20px;
+              width: 60px;
+            }
+          }
+
+          .detail {
+            // background: red;
+            text-align: center;
+            margin-left: 20px;
+            width: 60px;
+          }
+
+          .examInput {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+
+            .tip {
+              flex: 2;
+            }
+
+            .fen {
+              flex: 1;
+              height: 26px;
+              // background: yellowgreen;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .reasonKRExameDetailClaWrapHide {
+    display: none;
+    background: bisque;
+  }
+
+  .exameBtnWrap {
+    height: 140px;
+    margin: 50px auto 0px;
+    text-align: center;
+  }
+}

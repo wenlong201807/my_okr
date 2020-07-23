@@ -1,0 +1,20 @@
+.CommonTitleClaWrap {
+  margin: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  height: 55px;
+  line-height: 55px;
+
+  .baseTitel {
+    font-family: '微软雅黑';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+  }
+  .baseRight {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    // background: pink;
+  }
+}

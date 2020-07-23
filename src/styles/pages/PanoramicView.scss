@@ -1,0 +1,275 @@
+.PanoramicViewClaWrap {
+  // background: pink;
+  height: calc(100vh);
+
+  background-color: rgba(245, 247, 249, 1);
+
+  // 头部标题，可公用，暂留
+  .CommonTitleClaWrap {
+    margin: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    height: 55px;
+    line-height: 55px;
+
+    .baseTitel {
+      font-family: '微软雅黑';
+      font-weight: 400;
+      font-style: normal;
+      font-size: 16px;
+    }
+
+    .baseRight {
+      display: flex;
+      justify-content: space-between;
+      width: 300px;
+      // background: pink;
+    }
+  }
+
+  // 统计数据展示，一行**数据总览
+  .dataAssumeClaWrap {
+    display: flex;
+    height: 100px;
+    margin-bottom: 20px;
+    background: #fff;
+    justify-content: space-around;
+    text-align: center;
+
+    .dataAssumeCla {
+      flex: 1;
+      margin: 20px auto;
+
+      &:nth-child(2) {
+        border-left: 1px solid #ccc;
+        // border-left: 1px solid rgba(245, 247, 249, 1);
+        border-right: 1px solid #ccc;
+      }
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .subTitleCla {
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.447058823529412);
+      }
+
+      .subDataCla {
+        font-size: 24px;
+        color: rgba(0, 0, 0, 0.847058823529412);
+      }
+    }
+  }
+
+  // 团队成员列表区
+  .teamListClaWrap {
+    height: 70px;
+    // margin: 10px 20px;
+    padding: 30px 40px 10px;
+    background-color: rgba(255, 255, 255, 1);
+    // background: bisque;
+    overflow: hidden;
+
+    // display: flex;
+    // justify-content: space-around;
+    .title {
+      float: left;
+    }
+
+    .optionGroupBtn {
+      float: right;
+      padding-top: 5px;
+    }
+  }
+
+  // 表头
+  .tableHead {
+    padding: 10px 30px 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    font-family: '微软雅黑';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    background-color: rgba(255, 255, 255, 1);
+
+    .titleHead {
+      width: 20%;
+    }
+
+    .reasonHead {
+      width: 10%;
+    }
+
+    .grayHead {
+      width: 10%;
+    }
+
+    .updateHead {
+      width: 20%;
+    }
+
+    .actionHead {
+      width: 20%;
+    }
+  }
+
+  // 包裹内容，背景
+  .tableContentWrap {
+    background-color: rgba(255, 255, 255, 1);
+
+    .tableContent {
+      display: flex;
+      justify-content: space-around;
+      margin: 0px 30px 0px;
+      text-align: center;
+      border-bottom: 1px solid #ccc;
+
+      .name {
+        width: 20%;
+        text-align: left;
+        height: 60px;
+        line-height: 60px;
+        box-sizing: border-box;
+        margin: 5px 0px;
+        display: flex;
+        // flex-direction: column;
+        justify-content: flex-start;
+
+        // background: yellowgreen;
+        .nameImg {
+          display: inline-block;
+          height: 60px;
+          width: 60px;
+          border: 1px solid #ccc;
+          // margin-right: 10px;
+          // background: pink;
+        }
+
+        .nameContent {
+          flex: 1;
+          padding: 10px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+
+          .upName {
+            height: 30px;
+            line-height: 30px;
+            // background: yellow;
+            font-family: 'PingFang SC Negreta', 'PingFang SC';
+            font-weight: 650;
+            text-decoration: none;
+            color: #2d8cf0;
+          }
+
+          .downName {
+            font-family: 'PingFang SC Normal', 'PingFang SC';
+            font-weight: 400;
+            font-style: normal;
+            font-size: 14px;
+            color: rgba(0, 0, 0, 0.447058823529412);
+            line-height: 22px;
+          }
+        }
+      }
+
+      .reason {
+        width: 10%;
+        height: 60px;
+        line-height: 60px;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+        text-align: center;
+        font-family: 'PingFang SC Negreta', 'PingFang SC';
+        font-weight: 650;
+        font-style: normal;
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.847058823529412);
+        // background: blanchedalmond;
+      }
+
+      .grayCol {
+        width: 10%;
+        height: 60px;
+        line-height: 60px;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+        text-align: center;
+        font-family: 'PingFang SC Normal', 'PingFang SC';
+        font-weight: 400;
+        font-style: normal;
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.447058823529412);
+        // background: burlywood;
+      }
+
+      .timeCol {
+        width: 20%;
+        height: 60px;
+        line-height: 60px;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+        text-align: center;
+        font-family: 'PingFang SC Normal', 'PingFang SC';
+        font-weight: 400;
+        font-style: normal;
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.447058823529412);
+        // background: burlywood;
+      }
+
+      .tableAction {
+        width: 20%;
+        height: 60px;
+        line-height: 60px;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+
+        // color: red;
+        // background: blueviolet;
+        .btnAction {
+          display: inline-block;
+          margin-right: 15px;
+          margin-top: 10px;
+          height: 40px;
+          line-height: 40px;
+          width: 60px;
+          // background: yellow;
+          cursor: pointer;
+          font-family: 'Microsoft Tai Le';
+          font-weight: 400;
+          font-style: normal;
+          font-size: 14px;
+          color: #1890ff;
+
+          &:hover {
+            // font-family: 'Microsoft Tai Le';
+            // font-weight: 400;
+            // font-style: normal;
+            // font-size: 14px;
+            color: #f59a23;
+          }
+        }
+      }
+    }
+  }
+
+  .pageNavClaWrap {
+    height: 90px;
+    padding-top: 20px;
+    padding-right: 20px;
+    // padding: 20px 20px 30px;
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgba(255, 255, 255, 1);
+
+    .sigWord {
+      line-height: 20px;
+      font-size: 15px;
+      padding-top: 6px;
+    }
+  }
+}

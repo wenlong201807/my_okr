@@ -1,0 +1,72 @@
+@import '../CommonVar.scss';
+@import '../CommonMixin.scss';
+// @import '/commonVar.scss';
+
+.home-container {
+  background-color: rgba(245, 247, 249, 1);
+  position: relative;
+  // background: yellow;
+  //滚动条整体部分，可以设置宽度等
+  //  &::-webkit-scrollbar-button  ; // 滚动条两端的按钮
+  //  &::-webkit-scrollbar-track   ; // 外层轨道
+  //  &::-webkit-scrollbar-track-piece   ; // 内层滚动槽
+  //  &::-webkit-scrollbar-thumb  ; // 滚动的滑块
+  //  &::-webkit-scrollbar-corner  ; // 边角
+  //  &::-webkit-resizer  ; // 定义右下角拖动块的样式
+
+  .okrTitle {
+    // flex:none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+    height: $FixedH;
+    width: 100%;
+    line-height: $FixedH;
+    @include fixedTitleFonts;
+    // background: greenyellow;
+
+
+    // font-family: '微软雅黑';
+    // font-weight: 400;
+    // font-style: normal;
+    // font-size: 16px;
+    // color: #ffffff;
+    // text-align: left;
+    // padding-left: 20px;
+    // background-color: $ThemeBC;
+  }
+
+  .home {
+    min-width: 960px;
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin-top: $FixedH+1;
+    height: calc(100vh - $FixedH - 1);
+
+    .side {
+      width: 200px;
+      overflow-y: scroll;
+      background: #fff;
+
+      &::-webkit-scrollbar {
+        height: 1px;
+        width: 1px;
+        background-color: #ccc;
+      }
+    }
+
+    .content {
+      flex: 6 5 700px;
+      overflow-y: scroll;
+
+      &::-webkit-scrollbar {
+        height: 1px;
+        width: 1px;
+        background-color: $ThemeBC;
+      }
+    }
+  }
+}

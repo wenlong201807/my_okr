@@ -5,6 +5,7 @@ import '../styles/comps/PersonReasonOKRExame.scss';
 import classnames from 'classnames';
 import { Progress, Input, Button } from 'antd';
 import { LeftOutlined, UpOutlined, RightOutlined, FlagOutlined } from '@ant-design/icons';
+import Draggable from './Draggable'
 
 function PersonReasonOKRExame() {
   const history = useHistory();
@@ -33,6 +34,10 @@ function PersonReasonOKRExame() {
   };
   return (
     <div className="PersonReasonKRDetailWrap">
+
+      {
+        type === 'exame' ?( <Draggable></Draggable>) : null
+      }
       <div className="topNav">
         <div>
           <LeftOutlined onClick={jumpToPanoramicView} />

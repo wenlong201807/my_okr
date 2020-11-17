@@ -16,6 +16,7 @@ import MyOKR from './pages/MyOKR';
 import TeamOKRAdmin from './pages/TeamOKRAdmin';
 import PanoramicView from './pages/PanoramicView';
 import Test from '../components/test';
+import CustomHook from '../components/myHook';
 
 
 const {SubMenu} = Menu;
@@ -110,6 +111,11 @@ function Home() {
                                 () => jumpToTarget('/home/Test')
                             }>测试</div>
                         </Menu.Item>
+                        <Menu.Item key="/home/CustomHook">
+                            <div onClick={
+                                () => jumpToTarget('/home/CustomHook')
+                            }>自定义Hook</div>
+                        </Menu.Item>
 
                     </Menu>
                 </div>
@@ -127,6 +133,8 @@ function Home() {
                                 component={PanoramicView}/>
                             <Route path="/home/Test"
                                 component={Test}/>
+                            <Route path="/home/CustomHook"
+                                component={CustomHook}/>
                         </Switch>
                     </HashRouter>
                 </div>
